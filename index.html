@@ -12,16 +12,16 @@
         <h1 class="quiz__title">Quiz</h1>
         <p class="quiz__subtitle">Teste seus conhecimentos com nosso Quiz!</p>
       </header>
-      <div class="quiz__score-card">
-        <p class="quiz__score-label">
-          Pontuação: <span class="quiz__score-value" id="score">0</span>
-        </p>
-      </div>
-      <button class="quiz__button quiz__button--start" id="start-quiz">
+
+      <button
+        class="quiz__button quiz__button--start"
+        id="start-quiz"
+        type="button"
+      >
         Iniciar Quiz
       </button>
 
-      <section class="quiz__question-section" id="question-1">
+      <form class="quiz__question-form quiz__question--hidden" id="question-1">
         <div class="quiz__question">
           <p class="quiz__question-number">Questão 1</p>
           <p class="quiz__question-text">Qual é a capital do Brasil?</p>
@@ -38,9 +38,9 @@
             <p class="quiz__answer-text">Rio de Janeiro</p>
           </button>
         </div>
-      </section>
+      </form>
 
-      <section class="quiz__question-section" id="question-2">
+      <form class="quiz__question-form quiz__question--hidden" id="question-2">
         <div class="quiz__question">
           <p class="quiz__question-number">Questão 2</p>
           <p class="quiz__question-text">
@@ -59,9 +59,9 @@
             <p class="quiz__answer-text">Rio de Janeiro</p>
           </button>
         </div>
-      </section>
+      </form>
 
-      <section class="quiz__question-section" id="question-3">
+      <form class="quiz__question-form quiz__question--hidden" id="question-3">
         <div class="quiz__question">
           <p class="quiz__question-number">Questão 3</p>
           <p class="quiz__question-text">
@@ -80,10 +80,16 @@
             <p class="quiz__answer-text">Rio de Janeiro</p>
           </button>
         </div>
-      </section>
+      </form>
+
+      <div class="quiz__score-card quiz__score-card--hidden" id="score-board">
+        <p class="quiz__score-label">
+          Pontuação: <span class="quiz__score-value" id="score">0</span>
+        </p>
+      </div>
 
       <button
-        class="quiz__button quiz__button--start"
+        class="quiz__button quiz__buttom--finish quiz__btn--hidden"
         id="finish-quiz"
         type="button"
       >
