@@ -8,20 +8,87 @@
   </head>
   <body class="quiz-page">
     <main class="quiz">
-      <h1 class="quiz__title">Quiz</h1>
-      <p class="quiz__subtitle">Teste seus conhecimentos com nosso Quiz!</p>
+      <header class="quiz__header">
+        <h1 class="quiz__title">Quiz</h1>
+        <p class="quiz__subtitle">Teste seus conhecimentos com nosso Quiz!</p>
+      </header>
       <div class="quiz__score-card">
-        <p class="quiz__score-label">Pontuação: <span class="quiz__score-value" id="score">0</span></p>
+        <p class="quiz__score-label">
+          Pontuação: <span class="quiz__score-value" id="score">0</span>
+        </p>
       </div>
-      <button class="quiz__button quiz__button--start" id="start-quiz">Iniciar Quiz</button>
-      <div class="quiz__question" id="question-1">
-        <p class="quiz__question-number">Questão 1</p>
-        <p class="quiz__question-text">Qual é a capital do Brasil?</p>
-        <button class="quiz__button quiz__button--answer"><p class="quiz__answer-text">São Paulo</p></button>
-        <button class="quiz__button quiz__button--answer"><p class="quiz__answer-text">Brasília</p></button>
-        <button class="quiz__button quiz__button--answer"><p class="quiz__answer-text">Amazonas</p></button>
-        <button class="quiz__button quiz__button--answer"><p class="quiz__answer-text">Rio de Janeiro</p></button>
-      </div>
+      <button class="quiz__button quiz__button--start" id="start-quiz">
+        Iniciar Quiz
+      </button>
+
+      <section class="quiz__question-section" id="question-1">
+        <div class="quiz__question">
+          <p class="quiz__question-number">Questão 1</p>
+          <p class="quiz__question-text">Qual é a capital do Brasil?</p>
+          <button class="quiz__button quiz__button--answer">
+            <p class="quiz__answer-text">São Paulo</p>
+          </button>
+          <button class="quiz__button quiz__button--answer">
+            <p class="quiz__answer-text">Brasília</p>
+          </button>
+          <button class="quiz__button quiz__button--answer">
+            <p class="quiz__answer-text">Amazonas</p>
+          </button>
+          <button class="quiz__button quiz__button--answer">
+            <p class="quiz__answer-text">Rio de Janeiro</p>
+          </button>
+        </div>
+      </section>
+
+      <section class="quiz__question-section" id="question-2">
+        <div class="quiz__question">
+          <p class="quiz__question-number">Questão 2</p>
+          <p class="quiz__question-text">
+            Qual é o principal centro Econômico do Braisl?
+          </p>
+          <button class="quiz__button quiz__button--answer">
+            <p class="quiz__answer-text">São Paulo</p>
+          </button>
+          <button class="quiz__button quiz__button--answer">
+            <p class="quiz__answer-text">Brasília</p>
+          </button>
+          <button class="quiz__button quiz__button--answer">
+            <p class="quiz__answer-text">Amazonas</p>
+          </button>
+          <button class="quiz__button quiz__button--answer">
+            <p class="quiz__answer-text">Rio de Janeiro</p>
+          </button>
+        </div>
+      </section>
+
+      <section class="quiz__question-section" id="question-3">
+        <div class="quiz__question">
+          <p class="quiz__question-number">Questão 3</p>
+          <p class="quiz__question-text">
+            Qual é o estado que encontra-se a Zona Franca do Brasil?
+          </p>
+          <button class="quiz__button quiz__button--answer">
+            <p class="quiz__answer-text">São Paulo</p>
+          </button>
+          <button class="quiz__button quiz__button--answer">
+            <p class="quiz__answer-text">Brasília</p>
+          </button>
+          <button class="quiz__button quiz__button--answer">
+            <p class="quiz__answer-text">Amazonas</p>
+          </button>
+          <button class="quiz__button quiz__button--answer">
+            <p class="quiz__answer-text">Rio de Janeiro</p>
+          </button>
+        </div>
+      </section>
+
+      <button
+        class="quiz__button quiz__button--start"
+        id="finish-quiz"
+        type="button"
+      >
+        Finalizar o quiz
+      </button>
     </main>
     <script src="scripts/quiz.js"></script>
   </body>

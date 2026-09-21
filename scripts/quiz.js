@@ -1,9 +1,4 @@
-console.log('Quiz iniciando');
+const question1 = document.getElementById('question-1');
 
-const startQuiz = document.getElementById('start-quiz');
-
-console.log('texto do botão', startQuiz.textContent);
-
-startQuiz.textContent = 'Alterando o nome';
-
-console.log('texto do botão', startQuiz.textContent);
+console.log('Questão 1 ', question1);
+console.log('Questão 1 classe css:', question1.classList);
