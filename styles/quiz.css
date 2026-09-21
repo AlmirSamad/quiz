@@ -66,7 +66,7 @@ button {
 .quiz__score-card {
   display: flex;
   justify-content: center;
-  margin-bottom: 1.5rem;
+  margin: clamp(0.5rem, 2vw, 1rem) 0 clamp(1rem, 3vw, 1.5rem);
 }
 
 .quiz__score-label {
@@ -132,7 +132,7 @@ button {
   display: block;
   width: min(100%, 16rem);
   min-height: 3.25rem;
-  margin: 0 auto;
+  margin: clamp(0.5rem, 2vw, 0.75rem) auto 0;
   padding: 0.85rem 1.5rem;
   color: #5f5676;
   background: #e2d9ef;
@@ -146,7 +146,7 @@ button {
   box-shadow: 0 0.8rem 1.6rem rgb(112 99 138 / 24%);
 }
 
-.quiz__question-section {
+.quiz__question-form {
   width: 100%;
   margin-bottom: clamp(1rem, 3vw, 1.5rem);
 }

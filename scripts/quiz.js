@@ -80,9 +80,12 @@ question3.addEventListener('submit', (event) => {
   }
 
   finishQuizButton.classList.remove('quiz__btn--hidden');
+
+  score.textContent = totalScore;
   scoreBoard.classList.remove('quiz__score-card--hidden');
 });
 
 finishQuizButton.addEventListener('click', () => {
   console.log('Quiz finalizado');
+  window.location.reload();
 });
